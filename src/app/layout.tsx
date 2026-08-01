@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Bricolage_Grotesque, DM_Sans, Martian_Mono } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
@@ -45,6 +45,12 @@ const logo = localFont({
 export const metadata: Metadata = {
   title: `${site.name} — ${site.tagline}`,
   description: site.description,
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#0d0d11",
 };
 
 export default function RootLayout({
