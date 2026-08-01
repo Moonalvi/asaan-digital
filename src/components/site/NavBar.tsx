@@ -27,15 +27,19 @@ import { site } from "@/lib/site";
 export function NavBar() {
   return (
     <>
-      <div className="fixed left-6 top-6 z-50 mix-blend-difference md:left-10">
-        <Logo className="text-2xl sm:text-3xl" />
+      <div className="fixed left-4 top-4 z-50 mix-blend-difference sm:left-6 sm:top-6 md:left-10">
+        <Logo className="text-base sm:text-2xl md:text-3xl" />
       </div>
 
       <a
         href={site.bookingUrl}
-        className="fixed right-6 top-6 z-50 inline-flex items-center gap-3 border border-primary px-5 py-2.5 text-xs uppercase tracking-[0.2em] text-primary transition-colors hover:bg-primary hover:text-primary-foreground sm:right-10 sm:px-6 sm:py-3 sm:text-sm"
+        className="fixed right-4 top-4 z-50 inline-flex items-center gap-1.5 whitespace-nowrap border border-primary px-3 py-2 text-[10px] uppercase tracking-[0.1em] text-primary transition-colors hover:bg-primary hover:text-primary-foreground sm:right-6 sm:top-6 sm:gap-3 sm:px-5 sm:py-2.5 sm:text-xs sm:tracking-[0.2em] md:right-10 md:px-6 md:py-3 md:text-sm"
       >
-        {site.bookingLabel}
+        {/* Full label has room once the logo has shrunk out of the way past
+            sm; below that, the 15-min detail is the first thing to drop
+            since "book a call" alone still says everything a thumb needs. */}
+        <span className="sm:hidden">Book a call</span>
+        <span className="hidden sm:inline">{site.bookingLabel}</span>
         <span aria-hidden="true">&rarr;</span>
       </a>
     </>

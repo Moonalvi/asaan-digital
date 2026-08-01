@@ -74,7 +74,7 @@ export function Hero() {
           select-none only because holding over text otherwise highlights it
           mid gesture.
         */}
-        <h1 className="display select-none text-[clamp(2.25rem,7.2vw,8.5rem)]">
+        <h1 className="display select-none text-[clamp(2.75rem,9vw,8.5rem)]">
           {LINES.map((line, li) => (
             <span
               key={line.text}
