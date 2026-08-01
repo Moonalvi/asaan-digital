@@ -20,10 +20,10 @@ export const site = {
   tagline: "Websites for home service pros",
   description:
     "We build fast websites for home service businesses anywhere in the world, and you talk to the person who builds it.",
-  /** ⚠ Cal handle, email and domain all still need to exist before launch. */
+  /** ⚠ Cal handle still needs to exist before launch. */
   bookingUrl: "https://cal.com/asaan-digital/15min",
   bookingLabel: "Book a 15 min call",
-  email: "hello@asaandigital.com",
+  email: "Faizan@asaandigital.online",
   serviceAreas: "Working with home service businesses worldwide",
   /** Label on the FAQ's answer bubble, rhyming with the chatbot demo above. */
   aiName: "Asaan AI",
